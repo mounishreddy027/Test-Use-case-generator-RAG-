@@ -1,0 +1,16 @@
+# Ignore the virtual environment (huge!)
+venv/
+.venv/
+env/
+
+# Ignore the database (we mount this, don't copy it)
+db/
+chroma.sqlite3
+
+# Ignore git history
+.git/
+.gitignore
+
+# Ignore cache
+__pycache__/
+*.pyc

@@ -1,0 +1,41 @@
+# === Python & System Artifacts ===
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db
+
+# === Virtual Environments ===
+.venv/
+venv/
+env/
+.env
+
+# === Local Vector Database (ChromaDB) ===
+# DO NOT commit your local database to Git. 
+# It should be built locally from your source documents.
+db/
+.chroma/
+chroma/
+
+# === Tracking & Manifest Files ===
+# These files track which documents you've ingested locally.
+src/ingested_files.json
+src/chunk_registry.json
+
+# === Local Model Caches ===
+# Hugging Face and Sentence Transformers download weights locally.
+models/
+.cache/
+
+# === Document Samples ===
+# Only upload documents if you want them to be part of the initial clone.
+# Otherwise, keep the data folder empty in the repo.
+# data/*
+# !data/.gitkeep
+
+# === IDE Specific ===
+.vscode/
+.idea/
+*.swp
+
