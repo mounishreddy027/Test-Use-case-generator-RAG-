@@ -44,4 +44,9 @@ The application uses two distinct storage methods for reliability and ease of us
 
 ### **1. Build the Application**
 ```powershell
-docker build -t rag-app-final .
+docker build -t rag-app-final
+docker run -d -p 8501:8501 --name tender_borg \
+  -v ${PWD}/data:/app/data \
+  -v rag_storage:/app/db \
+  --add-host=host.docker.internal:host-gateway \
+  rag-app-final .
