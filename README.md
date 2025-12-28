@@ -1,4 +1,4 @@
-# RAG: Test Case Generator
+# RAG: Test/Use Case Generator
 **A production-ready RAG system designed for Senior QA Engineers to generate grounded test cases from requirement documents.**
 
 This application leverages a specialized Retrieval-Augmented Generation (RAG) pipeline to ingest complex software requirements and generate structured, high-quality test cases using **Ollama (Llama 3.2)** and a **Hybrid Retrieval** engine.
